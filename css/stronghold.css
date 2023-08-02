@@ -1,0 +1,241 @@
+.sh-select{
+    width: 400px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    /* border: solid 1px #235789; */
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0,0,0,0.5);
+    padding-left: 8px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.sh-box{
+    width:100%;
+    margin-top:35px;
+}
+
+.sh-title{
+    width:100%;
+    display: flex;
+    align-content: center;
+    margin-bottom:25px;
+}
+
+.sh-title > span{
+    font-family: PingFangTC;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-right:30px;
+    background-color: #235789;
+    padding:5px;
+}
+
+.sh-title > div {
+    display: flex;
+    align-items: center;
+}
+
+.sh-title > div:nth-child(2){
+    margin-right:20px;
+}
+
+.sh-title > div > img{
+    height:22px;
+    margin-right:10px;
+}
+
+.sh-title > div > span{
+    font-family: PingFangTC;
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.sh-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:solid 1px #b4b4b4;
+}
+
+.sh-item:last-child{
+    margin-bottom:0;
+}
+
+.sh-item-title{
+    width:100%;
+    display: flex;
+    align-items: center;
+    /* margin-bottom:12px; */
+}
+
+.sh-item-title > img{
+    height:15px;
+    margin-right:15px;
+}
+
+.has-person{
+    margin-left: 5px;
+}
+
+.sh-item-title > span{
+    display: inline-block;
+    height:25px;
+    font-family: PingFangTC;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.sh-item-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sh-item-detail > div ,
+.sh-item-detail > div > div{
+    display: flex;
+    align-items: center;
+}
+
+.sh-item-detail > div > div:nth-child(1),
+.sh-item-detail > div > div:nth-child(2){
+    width:220px;
+}
+
+.sh-item-detail > div > div > img{
+    height:15px;
+    margin-right:15px;
+}
+
+.sh-item-detail > div > div > span{
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+.sh-item-detail > button{
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #b4b4b4;
+    background-color: #fcfcfc;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e60012;
+}
+
+.sh-item-detail > button:hover{
+    border: solid 1px #e60012;
+    background-color: #e60012;
+    color:#ffffff;
+}
+
+@media screen and (max-width:1000px){
+    .sh-item-detail > div > div:nth-child(1),
+    .sh-item-detail > div > div:nth-child(2){
+        width:auto;
+        margin-right:20px;
+    }
+
+    .sh-item-detail > button{
+        width:150px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .sh-item-title,
+    .sh-item-detail,
+    .sh-item-detail > div > div{
+        justify-content: center;
+    }
+
+    .sh-item-detail{
+        flex-wrap: wrap;
+    }
+
+    .sh-item-detail > div{
+        flex-wrap: wrap;
+    }
+
+    .sh-item-detail > div, 
+    .sh-item-detail > div > div{
+        width:100% !important;
+        margin-right:0 !important;
+    }
+
+    .sh-item-detail > div > div{
+        margin-bottom:12px;
+    }
+
+    .sh-item-detail > button{
+        width:90%;
+        max-width: 200px;
+    }
+
+    .sh-item-title{
+        margin-bottom:12px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .sh-title {
+        /* flex-wrap: wrap; */
+        margin-bottom: 15px;
+    }
+
+    .sh-title > span{
+        white-space: nowrap;
+    }
+
+    .sh-title > span,
+    .sh-title > div:nth-child(2) {
+        margin-right:10px;
+    }
+
+    .sh-title > div > img{
+        height:18px;
+    }
+
+    .sh-title > div > span{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}

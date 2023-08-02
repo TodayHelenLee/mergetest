@@ -1,0 +1,36 @@
+.pagination-style{
+    display: flex;
+}
+
+.pagination-style > a{
+    width: 36px;
+    height: 36px;
+    border: solid 1px #989cab;
+    background-color: #ffffff;
+    color: #e60012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 2.5px;
+}
+
+.pagination-style > a:hover{
+    color: #ffffff;
+    background-color: #989cab;
+}
+
+.pagination-style > a:nth-child(1),
+.pagination-style > a:last-child{
+    background-color: #ffffff;
+}
+
+.pagination-style > a.active{
+    color: #ffffff;
+    background-color: #e60012;
+    border:none;
+}
+
+.pagination-style > a > img{
+    width: 8px;
+    height:13px;
+}

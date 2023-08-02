@@ -1,0 +1,985 @@
+.reservation-main-title{
+    width:600px;
+    max-width: 100%;
+    height:50px;
+    background-color: #235789;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    padding-left: 30px;
+    margin-bottom:40px;
+}
+
+.reservation-main-title > span{
+    font-family: PingFangTC;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.reservation-sub-title{
+    display: block;
+    font-family: PingFangTC;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #235789;
+}
+
+.reservation-warn-title{
+    width:100%;
+    background-color: #fbc723;
+    padding:10px 30px;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.reservation-box{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    padding:40px 30px 30px 30px;
+}
+
+.reservation-box-title{
+    display: inline-block;
+    width:120px;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.reservation-select{
+    width: 100%;
+    height:50px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border: solid 1px #b4b4b4;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    background-color: #ffffff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/images/select-arrow-d.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: right 22px bottom 16px;
+    padding-right: 44px;
+    flex:1;
+}
+
+.reservation-input2{
+    width: 100%;
+    height:50px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border: solid 1px #b4b4b4;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    background-color: #ffffff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/images/map-pin.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: right 22px bottom 16px;
+    padding-right: 44px;
+/*    flex:1;*/
+}
+
+#date-time > div{
+    width:50%;
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+#date-time > div:nth-child(2){
+    justify-content: flex-end;
+}
+
+.reservation-input{
+    width: 420px;
+    height:50px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border: solid 1px #b4b4b4;
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.time-title{
+    width:92px;
+}
+
+.date-input{
+    background-image: url(/images/calendar.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right 22px bottom 12px;
+    padding-right: 50px;
+}
+
+.time-input{
+    background-image: url(/images/clock.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right 22px bottom 12px;
+    padding-right: 50px;
+}
+
+.reservation-one-btn{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom:115px;
+}
+
+.reservation-two-btn{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top:50px;
+    margin-bottom:115px;
+}
+
+.reservation-one-btn > button,
+.reservation-two-btn > button, 
+.reservation-two-btn > input{
+    width: 500px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #e60012;
+    border: none;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.reservation-one-btn > button:hover,
+.reservation-two-btn > button:hover,
+.reservation-two-btn > input:hover{
+    position: relative;
+    top: -3px;
+    left: -3px;
+}
+
+.reservation-car-type{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.reservation-search{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reservation-search > div {
+    width: 560px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.reservation-search > div:nth-child(2) {
+    border-radius: 8px;
+    border: solid 1px #777777;
+}
+
+.reservation-search > div:nth-child(2) > input {
+    width: 60%;
+    height:70%;
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #b4b4b4;
+    padding-left:20px;
+    border:none;
+    border-right:solid 1px #979797;
+    border-radius: 0;
+}
+
+.reservation-search > div:nth-child(2) > select {
+    width: 27.5%;
+    height:100%;
+    border:none;
+    padding-left:10px;
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #b4b4b4;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/images/select-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: right 15px bottom 7px;
+    padding-right:30px;
+}
+
+.reservation-search > div:nth-child(2) > button {
+    flex: 1;
+    height:100%;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #e60012;
+}
+
+.reservation-search > div:nth-child(2) > button > img {
+    width:30px;
+}
+
+.reservation-car-list,
+.reservation-outfit-list {
+    width:100%;
+}
+
+.reservation-car-list > div,
+.reservation-outfit-list > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reservation-outfit-list{
+    margin-top:30px;
+}
+
+.car-box,
+.outfit-box {
+    position: relative;
+    width: 345px;
+    margin-bottom:50px;
+    height: max-content;
+}
+
+.car-box:hover > .car-box-img > div,
+.outfit-box:hover > .outfit-box-img > div {
+    transform: scale(1.1);
+}
+
+.car-box:nth-child(3n+2),
+.outfit-box:nth-child(3n+2) {
+    margin-left: 82.5px;
+    margin-right:82.5px;
+}
+
+.car-box-img,
+.car-box-content,
+.car-box-title,
+.car-box-detail,
+.car-box-price,
+.car-box-price-2,
+.outfit-box-img,
+.outfit-box-price,
+.outfit-box-qty {
+    width: 100%
+}
+
+.car-box-img,
+.outfit-box-img{
+    overflow: hidden;
+}
+
+.box-selected-border{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    border: solid 3px #e60012;
+}
+
+.car-box-content,
+.outfit-box-content {
+    position: relative;
+    width:100%;
+    padding:17px 25px 25px 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+.car-box-img > div,
+.outfit-box-img > div{
+    width:100%;
+    padding-bottom:56.232%;
+    transition: 0.5s;
+}
+
+.car-box-title{
+    margin-bottom:25px;
+}
+
+.outfit-box-title{
+    margin-bottom:15px;
+}
+
+.car-box-title > span,
+.outfit-box-title > span{
+    display: block;
+    text-align: center;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+.car-box-detail{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.car-box-detail > div{
+    width:50%;
+    margin-bottom:25px;
+    display: flex;
+    align-items: center;
+}
+
+.car-box-detail > div > img{
+    width:25px;
+}
+
+.car-box-detail > div > span{
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-left:13px;
+}
+
+.car-box-price > span,
+.car-box-price-2 > span{
+    display: block;
+    width:100%;
+    height:25px;
+    color: #333333;
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.car-box-price > span > div,
+.car-box-price-2 > span > div{
+    width:max-content;
+    margin:auto;
+    position: relative;
+}
+
+.car-box-price > span > span,
+.car-box-price-2 > span > span,
+.car-box-price > span > div > span,
+.car-box-price-2 > span > div > span{
+    font-size: 22px;
+}
+
+.car-box-price > span:nth-child(1),
+.car-box-price-2 > span:nth-child(1){
+    color: #235789;
+}
+
+.car-box-price > span:nth-child(2){
+    color: #e60012;
+}
+
+.car-box-price-2 > span:nth-child(3),
+.car-box-price-2 > span:nth-child(4),
+.car-box-price-2 > span:nth-child(5){
+    color:#696969;
+}
+
+.outfit-box-price{
+    margin-bottom:20px;
+}
+
+.outfit-box-price > span{
+    display: block;
+    font-family: PingFangTC;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e60012;
+}
+
+.car-select-btn{
+    width:100%;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #e60012;
+    background-color: #ffffff;
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e60012;
+    z-index: 1;
+}
+
+.car-select-btn.selected,
+.car-select-btn:hover {
+    background-color: #e60012;
+    color: #ffffff;
+}
+
+.outfit-box-qty{
+    padding: 0 30px;
+    display: flex;
+}
+
+.outfit-box-qty > button{
+    min-width:35px;
+    height:35px;
+    border:solid 1px #4a4a4a;
+    background-color: #ffffff;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outfit-box-qty > button > img{
+    width: 22px;
+}
+
+.outfit-box-qty > input{
+    /* flex: 1; */
+    width: 100%;
+    height: 35px;
+    border:none;
+    border-top:solid 1px #4a4a4a;
+    border-bottom:solid 1px #4a4a4a;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #235789;
+    border-radius: 0;
+}
+
+.reservation-payment-type{
+    width: 100%;
+    height:88px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    margin-top:30px;
+    padding:0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.reservation-payment-type > label{
+    margin:0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.reservation-payment-type > label:nth-child(1){
+    margin-right:160px;
+}
+
+.reservation-payment-type > label:nth-child(2){
+    margin-right:160px;
+}
+
+.reservation-payment-type > label > div {
+    box-shadow: 0px 0px 0px 1px #235789;
+    width: 19px;
+    height:19px;
+    border-radius: 50%;
+}
+
+.reservation-payment-type > label > input:checked + div{
+    border:1px solid white;
+    background-color: #e60012;
+}
+
+.reservation-payment-type > label > span {
+    font-family: PingFangTC;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-left:30px;
+}
+
+.reservation-info-box{
+    width: 100%;
+    padding: 17px 85px 50px 85px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+.reservation-tc-1{
+    color: #235789;
+}
+
+.reservation-tc-2 {
+    color: #ffffff;
+}
+
+.reservation-mr{
+    margin-right:17.5px !important; 
+}
+
+.reservation-ml {
+    margin-left: 17.5px !important;
+}
+
+.reservation-mr-2 {
+    margin-right: 11.5px !important;
+}
+
+.reservation-ml-2 {
+    margin-left: 11.5px !important;
+}
+
+.reservation-mx {
+    margin: 0 23px !important;
+}
+
+.reservation-bgc{
+    background: rgba(0, 0, 0, 1) !important;
+}
+
+.order-finish-gray{
+    width:100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #c9c9c9;
+    padding-top:50px;
+    padding-bottom:40px;
+}
+
+.order-finish-gray > span {
+    display: block;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.order-finish-gray > span:nth-child(2){
+    margin-bottom:10px;
+}
+
+.finish-main-title{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:25px;
+}
+
+.finish-main-title > img {
+    width: 30px;
+    height: 30px;
+    margin-right:20px;
+}
+
+.finish-main-title > span {
+    font-family: PingFangTC;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e60012;
+}
+
+.order-finish-white{
+    margin-top:2px;
+    width:100%;
+    padding:30px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+.order-finish-lightgray{
+    margin-top:2px;
+    width:100%;
+    padding:30px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #f2f2f2;
+}
+
+.finish-sub-title{
+    display: block;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e60012;
+    margin-bottom:10px;
+}
+
+.finish-info{
+    display: block;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.custom-my-1{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.del-line{
+    background-color: #333333;
+    width: 110%;
+    height: 1px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.see-more{
+    height: 608px;
+    background-image: url(/images/see-more.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.see-more > div{
+    width:77%;
+    height:100px;
+    border-radius: 4px;
+    border: solid 3px #235789;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px 0;
+}
+
+.see-more > div > span{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #235789;
+}
+
+.warning-content-1 > *{
+    color:rgba(0, 0, 0, 0.5) !important;
+}
+
+.warning-content-2 > *{
+    color:#fff !important;
+}
+
+@media screen and (max-width:1200px) {
+    .reservation-search > div{
+        width:48%;
+    }
+
+    .reservation-car-list,
+    .reservation-outfit-list{
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+    }
+
+    .reservation-car-list::-webkit-scrollbar,
+    .reservation-outfit-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .reservation-car-list > div,
+    .reservation-outfit-list > div {
+        width: max-content;
+        padding-left:15px;
+        flex-wrap: nowrap;
+    }
+
+    .car-box,
+    .outfit-box {
+        margin-right: 20px !important;
+        max-width: 345px;
+    }
+
+    .car-box:nth-child(3n+2),
+    .outfit-box:nth-child(3n+2){
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .reservation-input{
+        flex:1;
+    }
+
+    .time-title{
+        margin-left: 20px;
+    }
+
+    .reservation-two-btn > button,
+    .reservation-two-btn > input{
+        width:45%;
+        height:45px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .reservation-search > div:nth-child(2) > input{
+        width:50%;
+    }
+
+    .reservation-search > div:nth-child(2) > select{
+        width: 37.5%;
+    }
+
+    .reservation-info-box{
+        padding: 17px 40px 25px 40px;
+    }
+}
+
+@media screen and (max-width:850px){
+    #date-time > div{
+        width:100%;
+    }
+
+    .time-title {
+        width:120px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .reservation-search > div {
+        width: 100%;
+    }
+
+    .reservation-search > div:nth-child(1) {
+        margin-bottom:15px;
+    }
+
+    .reservation-car-type{
+        margin-bottom:25px;
+    }
+
+    /* .reservation-search > div:nth-child(2) > select{
+        width: 37.5%;
+    } */
+}
+
+@media screen and (max-width:600px) {
+    .reservation-payment-type{
+        padding:15px;
+    }
+
+    .reservation-payment-type > label{
+        width: 100%;
+    }
+
+    .reservation-payment-type{
+        height:120px;
+    }
+
+    .reservation-payment-type > label:nth-child(1),
+    .reservation-payment-type > label:nth-child(2){
+        margin-right:0;
+        margin-bottom:10px;
+    }
+
+    .reservation-payment-type > label > div{
+        width:16px;
+        height:16px;
+    }
+
+    .reservation-two-btn{
+        margin-top:40px;
+        margin-bottom:50px;
+    }
+
+    .reservation-two-btn > button,
+    .reservation-two-btn > input{
+        width:100%;
+    }
+
+    .reservation-two-btn > button:nth-child(1),
+    .reservation-two-btn > input:nth-child(1){
+        margin-bottom:25px;
+    }
+
+    .car-box,
+    .outfit-box {
+        max-width: 250px;
+    }
+
+    .outfit-box-qty > button{
+        max-width:25px;
+        min-width: 25px;
+        height:25px
+    }
+
+    .outfit-box-qty > button > img{
+        width:12px;
+    }
+
+    .outfit-box-qty > input{
+        height:25px;
+    }
+    
+    .reservation-mr,
+    .reservation-mr-2 {
+        margin-right: 0 !important;
+    }
+
+    .reservation-ml,
+    .reservation-ml-2 {
+        margin-left: 0 !important;
+    }
+
+    .reservation-mx{
+        margin: 0 0 !important;
+    }
+
+    .reservation-main-title > span{
+        font-size: 16px;
+    }
+
+    .reservation-sub-title,
+    .reservation-payment-type > label > span{
+        font-size: 16px;
+    }
+
+    .finish-main-title > img{
+        width:20px;
+        height:20px;
+    }
+
+    .finish-main-title > span{
+        font-size: 16px;
+    }
+
+    .reservation-select,
+    .reservation-input{
+        height:46px;
+    }
+
+    .see-more{
+        height: 555px;
+    }
+
+    .see-more > div{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .reservation-main-title{
+        margin-bottom:20px;
+    }
+
+    .reservation-box{
+        padding:20px;
+    }
+
+    .reservation-input,
+    .time-title {
+        width:100%;
+    }
+
+    .reservation-box-title{
+        width:100px;
+    }
+
+    .reservation-one-btn{
+        margin-top:20px;
+        margin-bottom:50px;
+    }
+
+    .custom-my-1{
+        margin-bottom:25px;
+    }
+}
